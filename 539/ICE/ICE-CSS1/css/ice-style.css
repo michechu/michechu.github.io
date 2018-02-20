@@ -1,0 +1,45 @@
+header {
+  background-color: yellow;
+  text-align: right;
+}
+
+nav {
+  text-align: center;
+}
+
+nav li{
+  display: inline-block;
+  background-color: black;
+  padding: 5px 25px 5px 40px;
+}
+
+nav a{
+  font-size: 1.25rem;
+  color: white;
+  text-decoration: none;
+}
+
+ul{
+  margin: 0px;
+}
+
+h1 {
+  margin:0px;
+}
+
+aside{
+  height: 400px;
+  width: 20%;
+  float: right;
+  background: white url("http://www.literarygenius.info/images/william-shakespeare.jpg") no-repeat center;
+  background-size: 90%;
+}
+
+body{
+  background-color: green;
+  margin: 0px;
+}
+
+#content {
+  background-color: #54554A;
+}
