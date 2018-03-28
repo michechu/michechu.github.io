@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+}
+
+text-transform: lowercase
+
+nav {
+  background-color: #FFE1CC;
+}
+
+div.jumbotron {
+  background-color: #FFE1CC;
+} /* the css doesn't work for this so the style was input within html */
+
+body{
+  background-color: #FFF5EE;
+}
