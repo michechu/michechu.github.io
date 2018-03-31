@@ -1,17 +1,81 @@
+/* ALL STYLES */
+
+/* header {
+  background-color: #E6E6FA;
+
+} */
+
+nav.navbar {
+  background-color: #E6E6FA;
+}
+
+.navbar-default {
+  border-color: #f0f7ff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  font-family: "Helvetica", Arial, sans-serif;
+  color: #555555;
+  background-color: #FFF0F5;
+}
+
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-text-transform: lowercase
-
-nav {
-  background-color: #FFE1CC;
+.active {
+  background-color: #FFF0F5;
 }
 
-div.jumbotron {
-  background-color: #FFE1CC;
-} /* the css doesn't work for this so the style was input within html */
+body {
+  background-color: #f0f7ff;
+  text-transform: lowercase;
+}
 
-body{
-  background-color: #FFF5EE;
+/* footer {
+  display: block;
+  background-color: #E6E6FA;
+} */
+
+.quotes {
+  text-align: left;
+}
+
+h1 {
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 10vw;
+  color: #778899;
+}
+
+h2 {
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 5vw;
+  color: #778899;
+}
+
+p {
+  font-family: "Helvetica", Arial, sans-serif;
+  color: #778899;
+}
+
+blockquote {
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 14px;
+  color: #778899;
+}
+
+cite {
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 14px;
+  color: #778899;
+  text-align: right;
+}
+
+
+ul.form {
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 14px;
+  color: #778899;
 }
