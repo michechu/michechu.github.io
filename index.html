@@ -9,23 +9,35 @@
     <title>Michelle Chung</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
   <body>
 
-  <header>
-    <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <ul class="nav navbar-nav">
-             <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-             <li><a href="moodboard.html">Mood Board</a></li>
-             <li><a href="quotes.html">Quotes</a></li>
-             <li><a href="contact.html">Contact</a></li>
-           </ul>
-      </div>
-    </nav>
-  </header>
+    <header>
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Projects
+              </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="project.html">Panopticon</a>
+                  <a class="dropdown-item" href="#">Menlo Innovations</a>
+                  <a class="dropdown-item" href="#">Forever 21</a>
+                </div>
+            </div>
+            <li><a href="moodboard.html">Mood Board</a></li>
+            <li><a href="quotes.html">Quotes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+            <img src="img/logo.jpg" alt="Logo">
+        </div>
+      </nav>
+    </header>
 
   <!-- <header>
   <nav class="navi">
@@ -40,11 +52,11 @@
   </nav>
 </header> -->
 
-
   <!-- CAROUSEL -->
   <div class="intro-box">
     <div class="container">
       <div class="row">
+        <h1>Projects</h1>
         <div id="welcome" class="carousel slide" data-ride="carousel">
           <!-- CAROUSEL -->
           <ol class="carousel-indicators">
@@ -78,12 +90,6 @@
   </div>
 
 
-
-
-
-
-
-
     <!-- <div class="container">
       <div class="jumbotron">
       <h1 class="display-3">welcome</h1>
@@ -91,51 +97,45 @@
       </div>
     </div> -->
 
-      <!-- Work -->
+      <!-- PROJECTS -->
       <section id="portfolio" class="portfolio">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 mx-auto text-center">
-              <h2>Things to do today:</h2>
-              <hr class="small">
               <div class="row">
                 <div class="col-md-4 shrink">
                   <div class="portfolio-item">
-                      <img class="img-portfolio img-fluid" src="img/bubble.jpg" alt="image of bathtub">
-                    <p>1. Meditate while taking a bubble bath.</p>
+                    <h2>Panopticon</h2>
+                      <p>1. Reframing the problem of sleep deprivation through an iterative user-centered design process</p>
+                      <img class="img-portfolio img-fluid" src="img/pink-1.png" alt="skyline of a city-1">
                   </div>
                 </div>
                 <div class="col-md-4 shrink">
                   <div class="portfolio-item">
-                      <img class="img-portfolio img-fluid" src="img/art.jpg" alt="image of Bouguereau's The Birth of Venus">
-                    <p>2. Journal and sketch in museums.</p>
+                    <h2>Menlo Innovations</h2>
+                      <p>2. Conducting field research to improve the design and implementation of Open Book Management</p>
+                        <a href="project.html">
+                          <img class="img-portfolio img-fluid" src="img/pink-2.png" alt="skyline of a city-2">
+                        </a>
                   </div>
                 </div>
                 <div class="col-md-4 shrink">
                   <div class="portfolio-item">
-                      <img class="img-portfolio img-fluid" src="img/dolphins.jpg" alt="image of dolphins">
-                    <p>3. Immerse in nature.</p>
+                    <h2>Forever 21</h2>
+                      <p>3. Identifying an interdepartmental need for an information system that lowers cost and increases efficiency</p>
+                      <img class="img-portfolio img-fluid" src="img/pink-3.png" alt="skyline of a city-3">
                   </div>
                 </div>
-          <!-- /.row (nested) -->
+          <!-- ROW -->
+            </div>
+          </div>
         </div>
-        <!-- /.col-lg-10 -->
       </div>
-      <!-- /.row -->
-    </div>
-    <!-- /.container -->
-  </section>
+    </section>
 
-        <hr>
-
-      </div> <!-- /container -->
-
-    </main>
 
     <footer>
-      <div class="container">
         <p>&copy; Michelle Chung 2018</p>
-      </div>
     </footer>
 
     <!-- Bootstrap core JavaScript

@@ -1,11 +1,5 @@
-/* ALL STYLES */
-
-/* header {
-  background-color: #E6E6FA;
-
-} */
-
 nav.navbar {
+  font-family: 'Quicksand', Arial, sans-serif;
   background-color: #E6E6FA;
 }
 
@@ -13,11 +7,28 @@ nav.navbar {
   border-color: #f0f7ff;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  font-family: "Helvetica", Arial, sans-serif;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus{
+  font-family: 'Quicksand', Arial, sans-serif;
   color: #555555;
   background-color: #FFF0F5;
+  border: 2px dashed #555555;
 }
+
+
+
+
+
+
+
+
+
+.navbar-default .navbar-nav>.active>a:hover {
+  font-family: 'Quicksand', Arial, sans-serif;
+  color: #555555;
+  background-color: #FFF0F5;
+  border: 2px dashed #555555;
+}
+
 
 ul {
   list-style: none;
@@ -25,8 +36,9 @@ ul {
   padding: 0;
 }
 
-.active {
-  background-color: #FFF0F5;
+div.container img{
+  /* margin-left: */
+  float: right;
 }
 
 body {
@@ -34,48 +46,70 @@ body {
   text-transform: lowercase;
 }
 
-/* footer {
-  display: block;
-  background-color: #E6E6FA;
-} */
-
 .quotes {
   text-align: left;
 }
 
 h1 {
-  font-family: "Helvetica", Arial, sans-serif;
-  font-size: 10vw;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 80px;
+  font-weight: bold;
   color: #778899;
 }
 
 h2 {
-  font-family: "Helvetica", Arial, sans-serif;
-  font-size: 5vw;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
   color: #778899;
 }
 
 p {
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: 'Quicksand', Arial, sans-serif;
   color: #778899;
 }
 
 blockquote {
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: 'Quicksand', Arial, sans-serif;
   font-size: 14px;
   color: #778899;
 }
 
 cite {
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: 'Quicksand', Arial, sans-serif;
   font-size: 14px;
   color: #778899;
   text-align: right;
 }
 
-
 ul.form {
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: 'Quicksand', Arial, sans-serif;
   font-size: 14px;
   color: #778899;
+}
+
+footer{
+  font-family: 'Quicksand', Arial, sans-serif;
+  color: #555555;
+  background-color: #FFF0F5;
+  height: 60px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}
+
+footer p{
+  margin: 10px;
+}
+
+.portfolio-item{
+  margin: 2px;
+}
+
+hr{
+  border: 1px dashed #555555;
+}
+
+#portfolio{
+  margin-bottom: 100px;
 }
