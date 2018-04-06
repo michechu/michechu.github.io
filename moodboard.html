@@ -40,17 +40,17 @@
               <div class="row">
                 <div class="col-md-4 shrink">
                   <div class="portfolio-item">
-                    <img class="img-portfolio img-fluid" src="img/sculpture.jpg" alt="image of sculptures">
+                    <img class="img-portfolio img-fluid" src="img/sculpture.jpg" onclick="openModal();currentSlide(1)" alt="image of sculptures">
                   </div>
                 </div>
                 <div class="col-md-4 shrink">
                   <div class="portfolio-item">
-                    <img class="img-portfolio img-fluid" src="img/birds.jpg" alt="image of birds flying">
+                    <img class="img-portfolio img-fluid" src="img/birds.jpg" onclick="openModal();currentSlide(2)" alt="image of birds flying">
                   </div>
                 </div>
                 <div class="col-md-4 shrink">
                   <div class="portfolio-item">
-                    <img class="img-portfolio img-fluid" src="img/champagne.jpg" alt="image of champagne glasses">
+                    <img class="img-portfolio img-fluid" src="img/champagne.jpg" onclick="openModal();currentSlide(3)" alt="image of champagne glasses">
                   </div>
                 </div>
               </div>
@@ -75,7 +75,7 @@
             </div>
 
 <!--Row 3-->
-              <div class="row">
+              <div class="row" id="portfolio">
                 <div class="col-md-4 shrink">
                   <div class="portfolio-item">
                     <img class="img-portfolio img-fluid" src="img/apricots.jpg" alt="image of apricots">
@@ -92,8 +92,58 @@
                   </div>
                 </div>
               </div>
-              
+
             </div>
+
+
+<!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+
+                <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="img/sculpture.jpg" alt="image of sculptures">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="img/birds.jpg" alt="image of birds flying">
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="img/champagne.jpg" alt="image of champagne glasses">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                  <img class="demo" src="img/sculpture.jpg" onclick="currentSlide(1)" alt="image of sculptures">
+                </div>
+
+                <div class="column">
+                  <img class="demo" src="img/birds.jpg" onclick="currentSlide(2)" alt="image of birds flying">
+                </div>
+
+                <div class="column">
+                  <img class="demo" src="img/champagne.jpg" onclick="currentSlide(3)" alt="image of champagne glasses">
+                </div>
+
+              </div>
+            </div>
+
+
+
+
     </main>
 
     <footer>
@@ -104,8 +154,62 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <script>
+    // Open the Modal
+    function openModal() {
+      if ($(window).width() >= 768) {
+        document.getElementById('myModal').style.display = "block";
+      }
+    }
+
+    // Close the Modal
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+
+
+
+
+
+
+
   </body>
 </html>
