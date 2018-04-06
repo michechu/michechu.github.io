@@ -1,5 +1,20 @@
+html, body, header, footer{
+    background-color: #f0f7ff;
+    font-family: 'Quicksand', Helvetica, sans-serif;
+    color: #555555;
+    text-transform: lowercase;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER & NAVIGATION */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 nav.navbar {
-  font-family: 'Quicksand', Arial, sans-serif;
   background-color: #E6E6FA;
 }
 
@@ -8,89 +23,95 @@ nav.navbar {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus{
-  font-family: 'Quicksand', Arial, sans-serif;
-  color: #555555;
   background-color: #FFF0F5;
   border: 2px dashed #555555;
 }
-
-
-
-
-
-
-
-
 
 .navbar-default .navbar-nav>.active>a:hover {
-  font-family: 'Quicksand', Arial, sans-serif;
-  color: #555555;
-  background-color: #FFF0F5;
-  border: 2px dashed #555555;
+  background-color: white;
+  border: 2px solid white;
+  color: black;
 }
 
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+ul.nav.navbar-nav li a:hover{
+  background-color: white;
+  border: 2px solid white;
+  color: black;
 }
 
-div.container img{
-  /* margin-left: */
-  float: right;
-}
-
-body {
-  background-color: #f0f7ff;
+/* PROJECTS BUTTON ON NAV BAR */
+.btn{
+  background: inherit;
   text-transform: lowercase;
+  padding: 14px 12px;
+}
+
+div.dropdown-menu ul{
+  margin: 0 10%;
+  background-color: #E6E6FA;
+}
+
+
+
+
+
+
+
+
+hr{
+  border: 1px dashed #778899;
 }
 
 .quotes {
   text-align: left;
 }
 
-h1 {
-  font-family: 'Quicksand', Arial, sans-serif;
-  font-size: 80px;
-  font-weight: bold;
+h1, h2, h3, p{
   color: #778899;
+  margin: 2%;
+}
+
+h1{
+  font-size: 7em;
+  font-weight: bold;
 }
 
 h2 {
-  font-family: 'Quicksand', Arial, sans-serif;
-  font-size: 40px;
+  font-size: 3em;
   font-weight: bold;
-  color: #778899;
+}
+
+h3{
+  font-size: 2em;
+  font-weight: bold;
 }
 
 p {
-  font-family: 'Quicksand', Arial, sans-serif;
-  color: #778899;
+  font-size: 1em;
 }
 
 blockquote {
-  font-family: 'Quicksand', Arial, sans-serif;
-  font-size: 14px;
+  font-size: 1em;
   color: #778899;
 }
 
 cite {
-  font-family: 'Quicksand', Arial, sans-serif;
-  font-size: 14px;
-  color: #778899;
+  font-size: 1em;
   text-align: right;
+  color: #778899;
 }
 
 ul.form {
-  font-family: 'Quicksand', Arial, sans-serif;
-  font-size: 14px;
+  font-size: 1em;
+  color: #778899;
+}
+
+ul{
+  font-size: 1em;
   color: #778899;
 }
 
 footer{
-  font-family: 'Quicksand', Arial, sans-serif;
-  color: #555555;
   background-color: #FFF0F5;
   height: 60px;
   width: 100vw;
@@ -106,10 +127,69 @@ footer p{
   margin: 2px;
 }
 
-hr{
-  border: 1px dashed #555555;
+#portfolio{
+  margin-bottom: 30%;
 }
 
-#portfolio{
-  margin-bottom: 100px;
+div.quotes{
+  margin-bottom: 30%;
+}
+
+section{
+  margin-bottom: 30%;
+}
+
+img.img-portfolio.img-fluid{
+  width: 85%;
+}
+
+
+
+
+@media all and (min-width: 576px)
+{
+  .logo{
+    position: absolute;
+    right: 10%;
+  }
+}
+
+@media all and (min-width: 768px)
+{
+  .logo{
+    position: absolute;
+    right: 10%;
+  }
+
+  div.dropdown-menu{
+  background: #E6E6FA;
+  }
+
+  div.dropdown-menu ul{
+    margin: 0 10%;
+  }
+
+  footer{
+    background-image: url("../img/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+@media all and (min-width: 992px)
+{
+  img.img-fluid:hover{
+    box-sizing: border-box;
+    border: 2px dashed #555555;
+  }
+
+  img.img-portfolio.img-fluid{
+    width: 100%;
+  }
+
+  div.contact{
+    background-image: url("../img/contactbg.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
 }
