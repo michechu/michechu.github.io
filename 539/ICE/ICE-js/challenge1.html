@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>JavaScript Challenges</title>
+    <style>
+    #emailfield{
+      display: none;
+    }
+    </style>
+
+    <script type="text/javascript">
+    function toggleEmail(){
+      if (document.getElementById("subscribe").checked){
+        document.getElementById('emailfield').style.display='inline';
+      }
+      else {
+        document.getElementById('emailfield').style.display='none';
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+
+        <legend>Email subscriptions</legend>
+
+        <p id="check">
+          <label>
+            <input type="checkbox" name="subscribe" id="subscribe" onchange="toggleEmail()">
+            Yes! I would like to receive all of your free candy!
+          </label>
+        </p>
+
+        <p id="emailfield">
+          <label>
+            Email Address:
+            <input type="text" name="email" id="email">
+          </label>
+        </p>
+
+      </fieldset>
+    </form>
+    <div>
+      <a href="challenge1.html">challenge1.html</a>
+      <a href="challenge2.html">challenge2.html</a>
+      <a href="challenge3.html">challenge3.html</a>
+      <a href="challenge4.html">challenge4.html</a>
+      <a href="challenge5.html">challenge5.html</a>
+    </div>
+  </body>
+</html>

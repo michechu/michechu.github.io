@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 4</title>
+    <style>
+    .errormsg{
+			color: red;
+			font-weight: bold;
+			font-size: 20px;
+			display: none;
+		}
+    </style>
+
+    <script type="text/javascript">
+    function checkForm(){
+			if (document.getElementById('fullname').value == ''){
+				document.getElementById('nameerrormsg').style.display = 'inline';
+			} else {
+				document.getElementById('nameerrormsg').style.display = 'none';
+			}
+			if (document.getElementById('streetaddr').value == ''){
+				document.getElementById('addrerrormsg').style.display = 'inline';
+			} else {
+				document.getElementById('addrerrormsg').style.display = 'none';
+			}
+			if (document.getElementById('fullname').value == '' || document.getElementById('streetaddr').value == ''){
+				return false;
+			}
+		}
+    </script>
+</head>
+<body>
+	<form  action="http://www.cnn.com/" onsubmit="return checkForm();" target="_blank">
+  <fieldset>
+
+    <legend>Personal details</legend>
+    <p>
+      <label>
+        Full name:
+        <input type="text" name="fullname" id="fullname">
+      </label>
+    </p>
+    <p class="errormsg" id="nameerrormsg">Please enter your name above</p>
+
+    <p>
+      <label>
+        Street Address:
+        <input type="text" name="streetaddr" id="streetaddr">
+      </label>
+    </p>
+    <p class="errormsg" id="addrerrormsg">Please enter your street address</p>
+
+  </fieldset>
+  <input type="submit" value="Submit it!">
+</form>
+<div>
+	<a href="challenge1.html">challenge1.html</a>
+	<a href="challenge2.html">challenge2.html</a>
+	<a href="challenge3.html">challenge3.html</a>
+	<a href="challenge4.html">challenge4.html</a>
+	<a href="challenge5.html">challenge5.html</a>
+</div>
+</body>
+</html>
