@@ -80,22 +80,24 @@ hr{
 
 h1, h2, h3, p{
   color: #778899;
-  margin: 2%;
 }
 
-h1{
-  font-size: 7em;
+h1 {
+  font-size: 5em;
   font-weight: bold;
+  margin
 }
 
 h2 {
   font-size: 3em;
   font-weight: bold;
+  text-align: left;
 }
 
-h3{
+h3, h3.process{
   font-size: 2em;
   font-weight: bold;
+  text-align: left;
 }
 
 p {
@@ -157,6 +159,13 @@ img.img-portfolio.img-fluid{
   width: 85%;
 }
 
+.icons{
+  width: 100%;
+}
+
+.process{
+  text-align: center;
+}
 
 
 /* LIGHTBOX */
@@ -346,6 +355,11 @@ img.hover-shadow {
     padding-top: 6%;
   }
 
+  h2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+  }
 }
 
 @media all and (min-width: 992px)
@@ -359,6 +373,11 @@ img.hover-shadow {
     width: 100%;
   }
 
-  
+  h1{
+    font-size: 7em;
+    font-weight: bold;
+    text-align: center;
+  }
+
 
 }
