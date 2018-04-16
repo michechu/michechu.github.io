@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- my stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Michelle Chung</title>
+</head>
+
+<body id="top">
+
+  <h1>Michelle Chung</h1>
+
+
+  <div id="content">
+    <img id="image" src="images/examPic.JPG" alt="photo of three women">
+    <img src="images/UMSI-logo.jpg" alt="photo of the UMSI logo">
+  </div>
+
+  <input type="button" id="hidebutton" name="hide" value="Hide Photo" onclick="hidePhoto()">
+  <input type="button" id="showbutton" name="show" value="Show Photo" onclick="showPhoto()">
+
+
+
+<script type="text/javascript">
+
+function hidePhoto(){
+  if (document.getElementById("hidebutton").onclick){
+    document.getElementById('image').style.display='none';
+  }
+}
+
+function showPhoto(){
+  if (document.getElementById("showbutton").onclick){
+    document.getElementById('image').style.display='block';
+  }
+}
+
+</script>
+
+
+</body>
+</html>

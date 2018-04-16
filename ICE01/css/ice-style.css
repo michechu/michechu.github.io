@@ -4,3 +4,14 @@ aside{
   float: right;
   background-color: #F0FFFF;
 }
+
+#content{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  display: inline;
+  max-height: 200px;
+}
