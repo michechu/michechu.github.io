@@ -12,31 +12,31 @@
   <h1>Michelle Chung</h1>
 
 
-  <div id="content">
+  <div class="content">
     <img id="image" src="images/examPic.JPG" alt="photo of three women">
-    <img src="images/UMSI-logo.jpg" alt="photo of the UMSI logo">
+    <img id="second" src="images/UMSI-logo.jpg" alt="photo of the UMSI logo">
   </div>
 
   <input type="button" id="hidebutton" name="hide" value="Hide Photo" onclick="hidePhoto()">
   <input type="button" id="showbutton" name="show" value="Show Photo" onclick="showPhoto()">
 
 
-
-<script type="text/javascript">
-
-function hidePhoto(){
-  if (document.getElementById("hidebutton").onclick){
-    document.getElementById('image').style.display='none';
+  <script type="text/javascript">
+  function hidePhoto(){
+    if (document.getElementById("hidebutton").onclick){
+      document.getElementById('image').style.display='none';
+      document.getElementById('second').style.display='block';
+      document.getElementById('second').style.margin='auto';
+    }
   }
-}
 
-function showPhoto(){
-  if (document.getElementById("showbutton").onclick){
-    document.getElementById('image').style.display='block';
+  function showPhoto(){
+    if (document.getElementById("showbutton").onclick){
+      document.getElementById('image').style.display='inline';
+      document.getElementById('second').style.display='inline';
+    }
   }
-}
-
-</script>
+  </script>
 
 
 </body>
